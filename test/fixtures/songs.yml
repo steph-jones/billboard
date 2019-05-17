@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  artist: MyString
+  featuring: MyString
+  position: MyString
+  last: MyString
+  peak: MyString
+  weeks: MyString
+  artist: one
+  billboard: one
+
+two:
+  artist: MyString
+  featuring: MyString
+  position: MyString
+  last: MyString
+  peak: MyString
+  weeks: MyString
+  artist: two
+  billboard: two

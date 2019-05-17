@@ -1,0 +1,13 @@
+<h1><%= @song.name %></h1>
+<hr/>
+<p> By: <%= @song.artist_name %> featuring <%= @song.featuring %> </p>
+
+<br/><p> This week's Position: <%= @song.position %> </p>
+<br/><p> Last week's Position: <%= @song.last %> </p>
+<br/><p> Song's Peak Position: <%= @song.peak %> </p>
+<br/><p> Weeks on Billboard: <%= @song.weeks %> </p>
+
+<hr />
+<%= link_to 'Edit Song', edit_artist_song_path([@artist, @song]) %>
+<%= link_to 'Delete Song', [@artist, @song], method: :delete %>
+<%= link_to 'Back To Songs', artist_songs_path(@artist) %>

@@ -1,2 +1,20 @@
-<h1>Boards#show</h1>
-<p>Find me in app/views/boards/show.html.erb</p>
+<h1>Billboards Show Page</h1>
+<p> add stuff here .... </p>
+<p> ¯\_(ツ)_/¯ </p>
+
+<h1><%= @board.name %></h1>
+<hr />
+
+<% @songs.each do |song| %>
+    <%= song.name %>
+<% end %>
+
+
+<p>What would you like to do?</p>
+<% link_to 'View Board', board_path(@board) %>
+<br />
+<%= link_to 'Edit Board', edit_board_path(@board) %>
+<br />
+<%= link_to 'Delete Board', board_path(@board.id), method: :delete %>
+<br />
+

@@ -1,0 +1,27 @@
+
+<h1> <%= @song.id ? "Edit Song for" : "New Song for" %> <%= @artist.name %> </h1>
+<hr />
+<%= form_for [@artist, @song] do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, required: true, autofocus: true %>
+  <br />
+  <%= f.label :artist_name %>
+  <%= f.text_field :artist_name, require: true %>
+  <br />
+  <%= f.label :"featuring other artists" %>
+  <%= f.text_field :featuring, require: true %>
+  <br />
+  <%= f.label :"Current Position" %>
+  <%= f.text_field :position, require: true %>
+  <br />
+  <%= f.label :"Last Week's Position" %>
+  <%= f.text_field :last, require: true %>
+  <br />
+  <%= f.label :"Peak Position" %>
+  <%= f.text_field :peak, require: true %>
+  <br />
+  <%= f.label :"Weeks on Billboard" %>
+  <%= f.text_field :weeks, require: true %>
+  <br />
+  <%= f.submit %>
+<% end %>
